@@ -8,9 +8,6 @@ require __DIR__ . '/vendor/autoload.php';
 $user = (new Analyzer(new DataSource(__DIR__ . '/data/user-channel.txt')))->analyze();
 $customer = (new Analyzer(new DataSource(__DIR__ . '/data/customer-channel.txt')))->analyze();
 
-$user = (new Analyzer(new DataSource(__DIR__ . '/data/user-small.txt')))->analyze();
-$customer = (new Analyzer(new DataSource(__DIR__ . '/data/customer-small.txt')))->analyze();
-
 $callDuration = max($user->getLatestEntry(), $customer->getLatestEntry());
 
 $result = [
