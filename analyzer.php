@@ -11,9 +11,9 @@ $customer = (new Analyzer(new DataSource(__DIR__ . '/data/customer-channel.txt')
 $callDuration = max($user->getLatestEntry(), $customer->getLatestEntry());
 
 $result = [
-    'call_duration'              => $callDuration,
-    'user_talked'                => $user->getTotalDuration(),
-    'cust_talked'                => $customer->getTotalDuration(),
+    // 'call_duration'              => $callDuration,
+    // 'user_talked'                => $user->getTotalDuration(),
+    // 'cust_talked'                => $customer->getTotalDuration(),
     'longest_user_monologue'     => $user->getLongestChunk(),
     'longest_customer_monologue' => $customer->getLongestChunk(),
     'user_talk_percentage'       => round(($user->getTotalDuration() / $callDuration) * 100, 2),
