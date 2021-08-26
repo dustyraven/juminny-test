@@ -1,4 +1,4 @@
-# juminny-test
+# Jiminny-test
 
 The task: https://github.com/jiminny/join-the-team/blob/master/backend-task.md
 
